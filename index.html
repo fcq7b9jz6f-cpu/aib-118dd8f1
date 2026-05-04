@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أم كلثوم - كوكب الشرق</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Amiri', serif;
+            background: linear-gradient(to bottom right, #f8f0e3, #e6d3b3);
+            color: #3f352a;
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        h1, h2 {
+            font-family: 'Tajawal', sans-serif;
+            color: #7b3f00;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        h1::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #7b3f00;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+        .hero-img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        .hero-img:hover {
+            transform: translateY(-10px) scale(1.02);
+        }
+        .section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+            border-right: 5px solid #d4af37;
+        }
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-right: 20px;
+        }
+        .section h2::before {
+            content: '»';
+            position: absolute;
+            right: 0;
+            top: -5px;
+            font-size: 3rem;
+            color: #d4af37;
+        }
+        .text-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
+        }
+        .music-link {
+            display: inline-block;
+            background: linear-gradient(to right, #d4af37, #b8860b);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: 'Tajawal', sans-serif;
+            font-weight: 700;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin-left: 1rem; /* Adjust for RTL */
+        }
+        .music-link:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            background: linear-gradient(to right, #b8860b, #d4af37);
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #5a4b3d;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            .section h2 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 1rem;
+            }
+            .hero-img {
+                width: 80%;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+             .hero-img {
+                width: 95%;
+            }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.appear {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="text-right">
+    <div class="container">
+        <header class="text-center py-10">
+            <h1 class="fade-in">أم كلثوم - كوكب الشرق</h1>
+            <p class="text-xl mt-4 fade-in delay-100">صوت مصر الخالد وأيقونة الفن العربي</p>
+        </header>
+
+        <main>
+            <section class="flex flex-col items-center mb-12">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Umm_Kulthum.jpg/800px-Umm_Kulthum.jpg" alt="أم كلثوم" class="hero-img fade-in delay-200">
+            </section>
+
+            <section class="section fade-in delay-300">
+                <h2 class="mb-6">نبذة عن حياتها</h2>
+                <div class="text-content">
+                    <p>فاطمة إبراهيم السيد البلتاجي (وُلدت في 4 مايو 1904 وتوفيت في 3 فبراير 1975)، واسمها الفني أم كلثوم، كانت مغنية مصرية مشهورة عالمياً، لقبت بـ 
